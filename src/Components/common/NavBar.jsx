@@ -95,7 +95,7 @@ const NavBar = ({ setProgress }) => {
         <div className={` flex sm:relative bg-richblack-900 w-screen relative z-50 h-14 items-center justify-center border-b-[1px] border-b-richblack-700 translate-y-  transition-all duration-500`}>
             <div className='flex w-11/12 max-w-maxContent items-center justify-between'>
                 <Link to='/' onClick={() => { dispatch(setProgress(100)) }}>
-                    <img src={logo} width={160} alt="Study Notion" height={42}></img>
+                    <span className="text-white font-bold text-2xl">campusBuddy</span>
                 </Link>
                 {/* mobile Navbar */}
                 {
@@ -168,11 +168,6 @@ const NavBar = ({ setProgress }) => {
                                 }
                             </div>
                             <div className=' mt-4 mb-4 bg-richblack-25 w-[200px] h-[2px]'></div>
-                            <Link to='/about' onClick={() => { dispatch(setProgress(100)); shownav() }} className="p-2">
-                                <p className=' text-richblack-5 '>
-                                    About
-                                </p>
-                            </Link>
                             <Link to='/contact' onClick={() => { dispatch(setProgress(100)); shownav() }} className="p-2">
                                 <p className=' text-richblack-5 '>
                                     Contact

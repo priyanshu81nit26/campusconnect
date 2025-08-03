@@ -2,6 +2,10 @@ const express = require("express");
 
 const app = express();
 
+// Interview Experience API
+const interviewExperienceRoutes = require('./routes/interviewExperience');
+app.use('/api/experiences', interviewExperienceRoutes);
+
 const userRoutes = require("./routes/User");
 const paymentRoutes = require("./routes/Payments");
 const profileRoutes = require("./routes/Profile");

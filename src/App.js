@@ -8,8 +8,9 @@ import Signup from "./pages/Signup";
 import ForgotPassword from "./pages/ForgotPassword";
 import ResetPassword from "./pages/ResetPassword";
 import VerifyOtp from "./pages/VerifyOtp";
-import About from "./pages/About";
+
 import ContactUs from "./pages/ContactUs";
+import PlacementsExp from "./pages/PlacementsExp";
 import LoadingBar from "react-top-loading-bar";
 import { setProgress } from "./slices/loadingBarSlice";
 import { useSelector } from "react-redux";
@@ -92,8 +93,9 @@ function App() {
 
         <Route path="/verify-email" element={<VerifyOtp />} />
 
-        <Route path="/about" element={<About />} />
+        
 
+        <Route path="/placements-exp" element={<PlacementsExp />} />
         <Route path="/contact" element={<ContactUs />} />
 
         <Route path="/courses/:courseId" element={<CourseDetails />} />
